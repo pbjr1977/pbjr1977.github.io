@@ -4,8 +4,12 @@
     <title>Phil Berger</title>
   </head>
   <body>
+    <section id="main"></section>
+    <script type="text/javascript" src="jquery-1.11.3.min.js">
     <script type="text/javascript">
-      document.write('<h1>Hello World</h1>');
+      $(document).ready(function(){
+        $('#main').load('README.md');
+      });
     </script>
   </body>
 </html>
