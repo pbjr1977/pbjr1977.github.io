@@ -16,10 +16,10 @@
 </style>
 <section id="resume">
      <div class="row">
-          <div id="contact_info" class="span3">
+          <div class="span4">
                <h1>Phillip Berger</h1>
           </div>
-          <div id="contact_info" class="span2 offset7">
+          <div id="contact_info" class="span2 offset6">
                618.616.8350<br>
                pbjr1977@gmail.com<br>
                Skype: pbgr1977<br>
@@ -318,101 +318,19 @@
      </div>
      <h2>Education</h2>
      <div class="row">
-          <div class="span3">
+          <div class="span12">
                MS - Computer Science<br>
                University of Newcastle-Upon-Tyne<br>
                Newcaste-Upon-Tyne, England<br>
-          </div>
-          <div class="span3 offset3">
                Dec. 2004
-          </div>
-     </div>
-     <div class="row">
-          <div class="span6">
-               <p>
-                    Coursework:
-               </p>
-          </div>
-          <div class="span6">
-               <ul>
-                    <li>
-                         Computing Environments
-                    </li>
-                    <li>
-                         Requirements Analysis
-                    </li>
-                    <li>
-                         Database Design 
-                    </li>
-                    <li>
-                         Software Engineering
-                    </li>
-                    <li>
-                         Intro to Object-Oriented Programming
-                    </li>
-                    <li>
-                         Advanced Object-Oriented Programming
-                    </li>
-                    <li>
-                         Web Technologies. 
-                    </li>
-               </ul>
           </div>
      </div>
      <div class="row">
           <div class="span3">
                MBA<br>
                Southern Illinois Universtiy Edwardsville<br>
-               Edwardsville Illinois<br>
-          </div>
-          <div class="span3 offset3">
+               Edwardsville, Illinois<br>
                May 2002
-          </div>
-     </div>
-     <div class="row">
-          <div class="span6">
-               <p>
-                    Relevant Coursework:
-               </p>
-          </div>
-          <div class="span6">
-               <ul>
-                    <li>
-                         Leadership and Managerial Effectiveness
-                    </li>
-                    <li>
-                         Principles of Service Marketing
-                    </li>
-                    <li>
-                         Principles of E-Business
-                    </li>
-                    <li>
-                         Principles of Marketing Research
-                    </li>
-                    <li>
-                         Principles of Managing Technology
-                    </li>
-                    <li>
-                         Statistical Analysis
-                    </li>
-                </ul>
-          </div>
-     </div>
-     <div class="row">
-          <div class="span6">
-               <p>
-                    Transferrable Skills:
-               </p>
-          </div>
-          <div class="span6">
-               <ul>
-                    <li>
-                         Developed a wide variety of both qualitative and quantitative analytical skills for each functional area of an organization.
-                    </li>
-                    <li>
-                         Gained an understanding of the strategic issues to be considered when integrating new technologies.
-                    </li>
-                </ul>
           </div>
      </div>
      <div class="row">
@@ -421,48 +339,8 @@
                Marketing Specialization<br>
                Philosophy Minor<br>
                Southern Illinois Universtiy Edwardsville<br>
-               Edwardsville Illinois<br>
-          </div>
-          <div class="span3 offset3">
+               Edwardsville, Illinois<br>
                May 1999
-          </div>
-     </div>
-     <div class="row">
-          <div class="span6">
-               <p>
-                    Relevant Coursework:
-               </p>
-          </div>
-          <div class="span6">
-               <ul>
-                    <li>
-                         Marketing
-                    </li>
-                    <li>
-                         Management
-                    </li>
-                    <li>
-                         Statistical Analysis
-                    </li>
-                    <li>
-                         Critical Thinking
-                    </li>
-                </ul>
-          </div>
-     </div>
-     <div class="row">
-          <div class="span6">
-               <p>
-                    Transferrable Skills:
-               </p>
-          </div>
-          <div class="span6">
-               <ul>
-                    <li>
-                         Developed a well-rounded foundation for critically analyzing a business environment. 
-
-                    </li>
-               </ul>
           </div>
      </div>
 </section>     
