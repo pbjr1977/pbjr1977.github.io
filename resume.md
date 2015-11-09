@@ -18,12 +18,8 @@
      <div class="row">
           <div id="contact_info" class="span3">
                <h1>Phillip Berger</h1>
-               618.616.8350<br>
-               pbjr1977@gmail.com<br>
-               Skype: pbgr1977<br>
           </div>
           <div id="contact_info" class="span2 offset7">
-               <h1>Phillip Berger</h1>
                618.616.8350<br>
                pbjr1977@gmail.com<br>
                Skype: pbgr1977<br>
