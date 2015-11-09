@@ -1,5 +1,5 @@
 <style>
-     #contact_info
+     #contact_info, .date
      {
           text-align:right;
      }
@@ -89,7 +89,7 @@
                Leidos<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Oct. 2013 - Present
           </div>
      </div>
@@ -126,7 +126,7 @@
                Osborn-Barr<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Feb. 2012 - Jun. 2012<br>
                Feb. 2013 - Oct. 2013
           </div>
@@ -167,7 +167,7 @@
                44 Interactive<br>
                Sioux Falls, South Dakota<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Nov. 2012 - Feb. 2013
           </div>
      </div>
@@ -184,7 +184,7 @@
                Wells Fargo<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Nov. 2012 - Feb. 2013
           </div>
      </div>
@@ -201,7 +201,7 @@
                ChrisLands.com (a subsidiary of AbeBooks and Amazon)<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Apr. 2009 - Sep. 2011
           </div>
      </div>
@@ -243,7 +243,7 @@
                Bonneville International<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Oct. 2007 - Dec. 2008
           </div>
      </div>
@@ -288,7 +288,7 @@
                Bonneville St. Louis Radio Group<br>
                St. Louis, Missouri<br>
           </div>
-          <div class="span3 offset3">
+          <div class="date span3 offset3">
                Jul. 2005 - Sep. 2007
           </div>
      </div>
