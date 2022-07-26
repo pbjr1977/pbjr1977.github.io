@@ -1,40 +1,553 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Phil Berger</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome.min.css" rel="stylesheet">
+    <style>
+
+
+      .red
+      {
+        color:white;
+        background-color:red;
+      }
+      
+      .blue
+      {
+        color:white;
+        background-color:blue;
+      }
+
+      .yellow
+      {
+        color:black;
+        background-color:yellow;
+      }
+
+      .black
+      {
+        color:white;
+        background-color:black;
+      }
+
+      .white
+      {
+        color:black;
+        background-color:white;
+      }
+
+      a.inv_red:hover
+      {
+        color:red;
+      }
+      
+      a.inv_blue:hover
+      {
+        color:blue;
+      }
+
+      a.inv_yellow:hover
+      {
+        color:yellow;
+      }
+
+      .left
+      {
+        text-align:center;
+        float:left;
+      }
+
+      .left
+      {
+        text-align:right;
+        float:right;
+      }
+      
+      body
+      {
+        font-family:Verdana,sans-serif;
+      }
+      
+      header > div#cover
+      {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: left;
+        text-align:left;
+        vertical-align:center;
+        font-size:4.0em;
+        font-weight:bold;
+        border:3px black solid;
+      }
+      
+      nav
+      {
+        font-size:1.2em;
+      }
+
+      nav > ul
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+
+      nav > ul > li
+      {
+          display: inline-block;
+          padding:5px;
+      }
+
+      
+      section
+      {
+        border:1px black solid;
+
+
+        width:975px;
+
+      }
+      
+      section#home
+      {
+        background-image: url('https://lh3.googleusercontent.com/wVVgw1cNHI991gWlHqxMZTTYu2PRFRnn4frN42bu-rl2mR-45h9ta5waYeJCE3C873d8YL7AUwWmkR_OgCp7YyRFTr_V08qvMY5fV0fVcnTlL04kg9EnFgWiEKpJu6Xiu1_JG7GcdnoiMuLOwuzFjF169XdoQIhbLNNOd7GXTibToYa9lehutylFz_jyNX31juB3VmFy7Uq8B-CMTsmllZPpX3-EGT_mblMarDEHJM2o678EN5FZKea6s-MmF2v5gBn8BbgLnTJTHR2eL7gRFbMH_M4l-nMIA2QwA1yXyaHpsSbiW1joFNlmrGLiDKnVx9nfb8CsbXdChKs0d6uVsw8kx2vAdbgpVcO4GpxPRcWM33nedTsvCcn_i9jHzyXJbHZw8Vx5mhEFZP497LaZxNFhFrhBAhP_XyXSEUPVSKkl8xFQdQNN1RUc8JydZID3jkWluBNGIErTPQnYqiGV0Io5tNpDNhGH9grTfeXUTf41Jk1AFLo2VSxPRdqhDcFqQBzpkhI6EFVHoiE7Tys6tpFBEi3wkBvTSbu5dMyqeK2CG3GZc5o6GS12bYlRBAh7zu3OdljRAv8EQgUirhZHJM4btFYmWd-sHUz6U45gLNoMH4r4bqSwG4KfS0We56TQnBM4qrIL4tRfnBFDri5wFrr9ghHvN_lyc33o4gO4_8eEUZYVyJZAwkinBZxsRmVoAvdqF_4CaZ-3yn_-aiZWcjQG5TBfoLAdvHhuNM5ZUxGkSxGVmDSf4vXC2jcj2QBEJVSIBto-aQ--5HLH20-DuBn5YyWPiyz65QBHnaJMEh678cW1hfXng0617ap-C4W_TFy8=w975-h517-no?authuser=0');
+
+        background-repeat: no-repeat;
+        background-position: left;
+
+        height:516px;
+
+
+      }
+
+      section#home > ul
+      {
+        list-style-type: none;
+        margin:0px;
+        padding:0px;
+      }
+
+      section#home > ul > li
+      {
+          display: block;
+          margin-bottom:3.0em;
+          width:100%;
+        
+      }
+
+      section#home > ul > li > a
+      {
+        margin-top:10px;
+        padding:5px;
+        font-size:2.0em;
+        font-weight:bold;
+        text-decoration:none;
+      }
+
+      main > section > article
+      {
+        padding:20px;
+      }
+    </style>
+
   </head>
   <body>
-    <nav class="container">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Project name</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active">
-                  <a href="#">Home</a>
-                </li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-              </ul>
-            </div>
-          </div>
+    <header>
+        <div id="cover" class="cover_letter black">
+          PHIL'S SANDBOX
         </div>
-      </div>
-    </nav>
-    <section id="main" class="container"></section>
-    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#main').load('resume.md');
-      });
-    </script>
+    
+        <section id="home">
+    
+            <ul>
+              <li class="right">
+                <a href="#about" title="About Me" class="black inv_red">About</a>
+              </li>
+              <li class="right">
+                <a href="#blog" title="Blog" class="black inv_yellow">Blog</a>
+              </li>
+              <li class="right">
+                <a href="#photos" title="Photography" class="black inv_blue">Photos</a>
+              </li>
+              <li class="right">
+                <a href="#whiskey" title="Whiskey Reviews" class="black inv_yellow">Whiskey Reviews</a>
+              </li>
+            </ul>
+            
+        </section>
+
+    </header>
+    
+    <main>
+      
+      <section id="about" class="white">
+
+        <article>
+          
+          <h1>About Me</h1>
+
+          <details>
+      
+            <summary>
+              Find out more about me.
+            </summary>
+            
+            <h2>
+              Hi. I'm Phil.
+            </h2>
+            
+            <p>
+              I'm originally from the St. Louis area, but I currently live in Rochester, NY.
+              (There's also been stops in the UK and South Dakota along the way).
+            </p>
+
+            <p>
+              I've been a web/app/whatever developer for a long ass time.
+              I've also dabbled in technical writing and social media management here and there.
+              If you really want to, <a href="#" target="_blank">you can check out my resume</a>,
+              but this site isn't intended to be a work portfolio per se.
+            </p>
+
+            <p>
+              When I'm not working, I have a lot of other interests:
+              
+              <ul>
+                <li>I'm definitely a dog person.</li>
+                <li>I mess around with photography.</li>
+                <li>I'm really into art.</li>
+                <li>I love trying new beers, wines, and whiskeys.</li>
+                <li>I'm a beekeeper. At least I try to be a beekeeper.</li>
+                <li>I love cooking when I have the time to throw myself into it.</li>
+                <li>I enjoy all types of music and I'm trying to teach myself to play the keyboard/piano.</li>
+                <li>I enjoy learning new languages. I can speak French, Italian, German, and Gaelic.</li>
+                <li>
+                  I'm a huge sports fan.<br/>
+                  I still mess around but I don't play as many sports as I used to. I got old and can't take the poundings any more.
+                  But I'm a <a href="#" target="_blank">Rochester Americans</a>, a <a href="#" target="_blank">card-carrying supporter of CF Montreal</a>, and a huge baseball fan as well.
+                  I also have a pretty sweet memborbilia collection.
+                </li>
+              </ul>
+
+            </p>
+
+          </details>
+          
+        </article>
+        
+        <article>
+
+          <h1>About This Site</h1>
+
+          <details>
+      
+            <summary>
+              Why Is This Site A Thing?
+            </summary>
+
+            <h2>Why Does This Site Exist?</h2>
+            
+            <p>
+              I made my first website in the mid-90's. It was clunky and the content was random. I was teaching
+              myself HTML as I went along and I threw everything I was learning into the site without much thought.
+              I did the whole thing using Notepad. No wireframes. No frameworks. It was as terrible as it was
+              glorious.
+            </p>
+            
+            <p>
+              I started doing development professionally in 2005. I've lost count of how many websites I've made.
+              I've done sites for radio stations, bands, retailers, bars, casinos, banks, Fortune 500 corporations,
+              even the military. But I haven't made a site just for me since that first shitty website.
+            </p>
+            
+            <p>
+              Frankly, I'm burned out. So I'm trying to get back to my roots as they say, and make my own shitty
+              little handmade site with whatever I want on it.
+            </p>
+
+            <h2>Why Does This Site Look The Way It Does?</h2>
+
+            <p>
+              Honestly, I don't know what this site looks like yet. I'm not gonna worry about that until I get at
+              least some content in place. But I do have some idea in my head of how it's going to look. The
+              biggest design influences are going to be <a href="#" target="_blank">Brutalism</a> and
+              <a href="#" target="_blank">Neoplasticism</a>.
+            </p>
+
+            <blockquote>
+
+              <h3>Brutalism</h3>
+              
+              <p>
+                Brutalism has its roots in Mid-20th Century European archictecture. After World War II, most of
+                Europe was blown to shit. Many of the major cities needed to rebuild and they had 3 basic
+                requirements for construction. It had to be fast, cheap, and strong enough that it won't get blown
+                to shit again in the next war.
+              </p>
+              
+              <p>
+                So what did those architects come up with? Big, ugly buildings made of one solid block of concrete
+                with no ornamentation and as little glass as possible. However, over time people have come to see
+                something endearing in these buildings.
+              </p>
+              
+              <p>
+                The term was hijacked by the web design community to refer to an "old school" approach that
+                elminates things like script bloat and slow loading graphics, sacrificing the bells and slick
+                interface for a lean site that loads fast. I'm a big fan of this philsophy and it's something I'll
+                probably write a lot more about as the site evolves.
+              </p>
+            
+            </blockquote>
+            
+            <blockquote>
+              
+              <h3>Neoplasticism</h3>
+              
+              <p>
+                Also known as <i>De Stijl</i> (Dutch for "The Style"), Neoplasticism was an art movement that
+                emerged from Europe in the 1920's. <a href="#" target="_blank">Piet Mondrian</a> is one of the
+                better known artists from this movement. At its core, Neoplasticism, is a revolution against the
+                highly stylized art that preceded it. It embraces a harsher, abstract aesthetic that uses only
+                straight horizontal and vertical lines, and a simplified color palette that consists of black,
+                white, red, blue, and yellow.
+              </p>
+
+            </blockquote>
+
+            <p>
+              The common theme here is to keep things as simple as positive. One of my biggest complaints about
+              modern web design is that it's become to easy to make a website. There are libraries and frameworks
+              that let you do a lot of cool stuff. But not enough people know how to really use them. The result is
+              website after website that look the same and perform poorly. I'm hoping I can do better than that by
+              limiting myself.
+            </p>
+            
+            <p>
+              And for any professional web designers that happen across this who feel like I'm
+              judging you, that is 100% what I'm doing.
+            </p>
+            
+          </details>
+          
+        </article>
+
+      </section>
+      <section id="blog" class="white">
+
+        <h1>Blog</h1>
+        
+        <p>
+          I'm not sure that <i>blog</i> is quite the right word for what I'm envisioning here. At least not in the
+          traditional sense. I mean there's going to be some of that, but I want it to be a little more free form.
+          I've tried blogging in the past and it just never comes together. I tend to force myself to follow the
+          standard conventions and I quickly get bored and frustrated. So I'm not promising or expecting anything
+          and whatever happens will be whatever happens.
+        </p>
+
+
+      </section>
+      <section id="photos" class="black">
+
+        <h1>Photography</h1>
+         
+        <p>
+          I like to dabble in photography. I'm going to curate some photo galleries in this section, along with my thoughts on them. They're going to range from good to bad and all points in between.
+        </p>
+
+      </section>
+      <section id="whiskey" class="white">
+        
+        <h1>Life Is Too Short To Drink Shitty Whiskey</h1>
+        
+        <p>
+          I started drinking whiskey when I was in college and my love for it was instant and unconditional.
+          Back then, I didn't really know much about whiskey and I wasn't very discerning. I just knew it made my
+          brain all sparkly.
+        </p>
+        
+        <p>
+          These days, however, I'm a little more sophisticated in my whiskey consumption and my palette has become
+          more discerning. I don't drink quite as much of it, and I only drink the good stuff.
+        </p>
+        
+        <p>
+          Now, I want to save the world from that rigourous trial and error process of finding the good stuff by
+          jotting down my thoughts on all of the whiskeys I drink.
+        </p>
+        
+        <article id="martell_blue_swift" class="cognac french grade_a">
+          
+          <h2>Martell - Blue Swift Cognac</h2>
+
+
+          <div class="whiskey_score">
+            <label for="mbs_score">Rating: 10/10</label>
+            <progress id="mbs_score" value="100" max="100"></progress>
+          </div>
+
+          <details>
+            
+            <summary>
+              80 proof French Cognac
+            </summary>
+
+            <p>
+              Martell Blue Swift is a French Cognac that is aged in bourbon barrels for 4 years. A 750ml bottle will
+              cost you around $50, and it's well worth that price.
+            </p>
+
+            <ul>
+              <li>Rich, golden brown color</li>
+              <li>I would describe the nose as being warm, sweet, and oaky.</li>
+              <li>
+                The flavor is very complex. It's warm and velvety. It has a distinct fruity taste like sherry.
+                There are also mellow toffee notes present, and just the right amount of spicy bite to it.
+                </li>
+            </ul>
+          
+          </details>
+          
+        </article>
+
+        <article id="beggars_bush" class="irish whiskey grade_a">
+          
+          <h2>Jack Ryan - Beggar's Bush 12-Year Old</h2>
+
+
+          <div class="whiskey_score">
+            <label for="jrbb_score">Rating: 10/10</label>
+            <progress id="jrbb_score" value="100" max="100"></progress>
+          </div>
+
+          <details>
+            
+            <summary>
+              92 proof Irish Whiskey
+            </summary>
+
+            <p>
+              Beggar's Bush is a 12-year old single malt Irish whiskey that is aged in bourbon barrells.
+              It's a limited edition, so you might have a hard time finding it, and it won't be cheap if you do. But
+              in my opionion, it's worth it. This might be the best Irish whiskey I've ever had.
+            </p>
+
+            <ul>
+              <li>Medium pale gold color</li>
+              <li>Nose is very strong, zesty, and sweet.</li>
+              <li>
+                This is a very smooth whiskey with a complicated flavor profile. There's a lot to unpack here.
+                This whiskey comes at you in waves. It's warm and smooth. Initially, you will notice a sweetness
+                that has elements of vanilla, caramel, honey, and fruitiness. Eventually, a peppery spiciness
+                emerges. Finally, the flavor evolves into a woody earthiness.
+              </li>
+            </ul>
+          
+          </details>
+          
+        </article>
+
+        <article id="jj_corry" class="irish whiskey grade_b">
+          
+          <h2>J.J. Corry - 'The Hanson' Batch No. 2</h2>
+
+
+          <div class="whiskey_score">
+            <label for="jjc_score">Rating: 8/10</label>
+            <progress id="jjc_score" value="80" max="100"></progress>
+          </div>
+
+          <details>
+            
+            <summary>
+              92 proof Irish Whiskey
+            </summary>
+
+            <p>
+              'The Hanson' Batch No.2 is a very smooth blended Irish whiskey with a complex but approachable flavor.
+              This particular whiskey is a limited edition that may be hard to find. But as I understand it,
+              J.J. Corry does everything in small batches using traditional rustic Irish barrelling techniques.
+              So I would imagine anything they do will be good.
+            </p>
+
+            <ul>
+              <li>Pale gold color</li>
+              <li>Nose is extremely sweet.</li>
+              <li>
+                This is a very smooth whiskey with a smooth mouthfeel. The flavor is sweet, though
+                not as sweet as I expected, with vanilla, toffee, citrus, and ever so subtle honey notes. It's a
+                fairly dry Irish whiskey with a spicy, peppery finish. Overall, it's not the best Irish whiskey I've
+                had, but it's far from the worst.
+              </li>
+            </ul>
+          
+          </details>
+          
+        </article>
+
+        <article id="two_stacks" class="irish whiskey grade_d">
+          
+          <h2>Two Stacks - The First Cut</h2>
+
+
+          <div class="whiskey_score">
+            <label for="tsfc_score">Rating: 6.5/10</label>
+            <progress id="tsfc_score" value="65" max="100"></progress>
+          </div>
+
+          <details>
+            
+            <summary>
+              86 proof Irish Whiskey
+            </summary>
+
+            <p>
+              The First Cut is a blended Irish whiskey. Personally, I wasn't a fan. A lot of Irish whiskeys are a
+              touch underdone to me. They aren't as smooth as bourbon or as rich as scotch. And that is how I feel
+              about this one. It's a shame really, as there as are hints of a complex flavor. There's just too much
+              grainy, alcohol burn drowning it out.
+            </p>
+          
+            <ul>
+              <li>Medium gold color</li>
+              <li>Nose is sweet with hints of smokiness.</li>
+              <li>
+                The First Cut doesn't quite make the cut for me. It has a grainy taste with a strong alcoholic burn
+                that often comes with Irish whiskey. Unfortunately, that burn is a little two strong and it
+                overwhelms some of the more dyanmic underlying sweet and fruity notes. However, it does finish well,
+                with an earthy, nutty, spicy flavor.
+              </li>
+            </ul>
+          
+          </details>
+          
+        </article>
+
+      </section>
+
+    </main>
+    <footer>
+      <ul>
+        <li>&#127968;</li>
+        <li>
+          &#128526;
+        </li>
+        <li>&#128248;</li>
+        <li>&#127831;</li>
+        <li>&#127864;</li>
+        <li>&#127866;</li>
+        <li>&#128029;</li>
+        <li>&#127922;</li>
+        <li>&#127925;</li>
+        <li>&#127954;</li>
+        <li>&#128200;</li>
+        <li>&#128663;</li>
+        <li>&#128062;</li>
+        <li>&#9917;</li>
+      </ul>
+    
+    </footer>
   </body>
 </html>
