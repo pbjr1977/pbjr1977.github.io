@@ -1,553 +1,1013 @@
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Phil Berger</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
+                    
     <style>
 
-
-      .red
-      {
-        color:white;
-        background-color:red;
-      }
-      
-      .blue
-      {
-        color:white;
-        background-color:blue;
-      }
-
-      .yellow
-      {
-        color:black;
-        background-color:yellow;
-      }
-
-      .black
-      {
-        color:white;
-        background-color:black;
-      }
-
-      .white
-      {
-        color:black;
-        background-color:white;
-      }
-
-      a.inv_red:hover
-      {
-        color:red;
-      }
-      
-      a.inv_blue:hover
-      {
-        color:blue;
-      }
-
-      a.inv_yellow:hover
-      {
-        color:yellow;
-      }
-
-      .left
-      {
-        text-align:center;
-        float:left;
-      }
-
-      .left
-      {
-        text-align:right;
-        float:right;
-      }
-      
       body
       {
-        font-family:Verdana,sans-serif;
+        width:900px;
+        font-family: 'Garet', sans-serif;
       }
       
-      header > div#cover
+      .black
       {
-        display:flex;
-        flex-flow: row wrap;
-        justify-content: left;
-        align-items: left;
-        text-align:left;
-        vertical-align:center;
-        font-size:4.0em;
-        font-weight:bold;
-        border:3px black solid;
+        color:#ffffff;
+        background-color:#000000;
+      }
+      
+      header
+      {
+        font-family: 'Garet', sans-serif;
+        font-size:3.0em;
+        text-transform: uppercase;
+      }
+
+      h1
+      {
+        border:10px #000000 solid;
+        width:900px;
+        text-align:center;
+      }
+      
+
+      h1 > span
+      {
+        display:block;
       }
       
       nav
       {
-        font-size:1.2em;
-      }
-
-      nav > ul
-      {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-
-      nav > ul > li
-      {
-          display: inline-block;
-          padding:5px;
-      }
-
-      
-      section
-      {
-        border:1px black solid;
-
-
-        width:975px;
-
+        font-size:0.8em;
       }
       
-      section#home
+      menu
       {
-        background-image: url('https://lh3.googleusercontent.com/wVVgw1cNHI991gWlHqxMZTTYu2PRFRnn4frN42bu-rl2mR-45h9ta5waYeJCE3C873d8YL7AUwWmkR_OgCp7YyRFTr_V08qvMY5fV0fVcnTlL04kg9EnFgWiEKpJu6Xiu1_JG7GcdnoiMuLOwuzFjF169XdoQIhbLNNOd7GXTibToYa9lehutylFz_jyNX31juB3VmFy7Uq8B-CMTsmllZPpX3-EGT_mblMarDEHJM2o678EN5FZKea6s-MmF2v5gBn8BbgLnTJTHR2eL7gRFbMH_M4l-nMIA2QwA1yXyaHpsSbiW1joFNlmrGLiDKnVx9nfb8CsbXdChKs0d6uVsw8kx2vAdbgpVcO4GpxPRcWM33nedTsvCcn_i9jHzyXJbHZw8Vx5mhEFZP497LaZxNFhFrhBAhP_XyXSEUPVSKkl8xFQdQNN1RUc8JydZID3jkWluBNGIErTPQnYqiGV0Io5tNpDNhGH9grTfeXUTf41Jk1AFLo2VSxPRdqhDcFqQBzpkhI6EFVHoiE7Tys6tpFBEi3wkBvTSbu5dMyqeK2CG3GZc5o6GS12bYlRBAh7zu3OdljRAv8EQgUirhZHJM4btFYmWd-sHUz6U45gLNoMH4r4bqSwG4KfS0We56TQnBM4qrIL4tRfnBFDri5wFrr9ghHvN_lyc33o4gO4_8eEUZYVyJZAwkinBZxsRmVoAvdqF_4CaZ-3yn_-aiZWcjQG5TBfoLAdvHhuNM5ZUxGkSxGVmDSf4vXC2jcj2QBEJVSIBto-aQ--5HLH20-DuBn5YyWPiyz65QBHnaJMEh678cW1hfXng0617ap-C4W_TFy8=w975-h517-no?authuser=0');
-
-        background-repeat: no-repeat;
-        background-position: left;
-
-        height:516px;
-
-
+        list-style-type:none;
+        display:grid;
+        grid-template-columns: auto auto auto;
+      }
+      
+      menu > li
+      {
+        text-align:center;
       }
 
-      section#home > ul
+      menu > li > a
       {
-        list-style-type: none;
-        margin:0px;
-        padding:0px;
-      }
-
-      section#home > ul > li
-      {
-          display: block;
-          margin-bottom:3.0em;
-          width:100%;
-        
-      }
-
-      section#home > ul > li > a
-      {
-        margin-top:10px;
-        padding:5px;
-        font-size:2.0em;
-        font-weight:bold;
         text-decoration:none;
+        padding:20px;
+      }
+      
+      .red
+      {
+        background-color:red;
+        color:white;
+      }
+      
+      .red:hover
+      {
+        background-color:white;
+        color:red;
       }
 
-      main > section > article
+      .blue
+      {
+        background-color:blue;
+        color:white;
+      }
+      
+      .blue:hover
+      {
+        background-color:white;
+        color:blue;
+      }
+
+      .yellow
+      {
+        background-color:yellow;
+        color:black;
+      }
+
+      .yellow:hover
+      {
+        background-color:black;
+        color:yellow;
+      }
+
+      /*
+        pride variation
+
+        .red
+        {
+          background-color:#D60270;
+          color:white;
+        }
+        
+        .red:hover
+        {
+          color:#D60270;
+          background-color:white;
+        }
+  
+        .blue
+        {
+          background-color:#9B4F96;
+          color:white;
+        }
+        
+        .blue:hover
+        {
+          color:#9B4F96;
+          background-color:white;
+        }
+  
+        .yellow
+        {
+          background-color:#0038A8;
+          color:black;
+        }
+  
+        .yellow:hover
+        {
+          color:#0038A8;
+          background-color:black;
+        }
+
+      */
+
+      .badge
+      {
+        width: 100px;
+        height: 50px;
+        text-align:right;
+        vertical-align:bottom;
+        color:#fff;
+        background-color:#000;
+        margin:20px;
+      }
+
+      aside
+      {
+        margin-right:30px;
+      }
+      ul
+      {
+        list-style-type:none;
+      }
+      
+      details
+      {
+        margin-top:20px;
+        clear:both;
+      }
+      
+      details > ul > li
       {
         padding:20px;
       }
-    </style>
+      
+      summary > h4, summary > h3
+      {
+        display:inline;
+      }
+      
+      .grid_bin
+      {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
 
+      figure
+      {
+        border:2px #000000 solid;
+        width:270px;
+      }
+      
+      figure > img
+      {
+        max-width:250px;
+        padding:10px;
+      }
+      
+      figcaption
+      {
+        font-size:0.8em;
+        font-weight:bold;
+        text-align:center;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+      }
+      
+      img.banner
+      {
+        max-width:900px;
+      }
+      
+      .left
+      {
+        float:left;
+        clear:right;
+      }
+      
+      .right
+      {
+        float:right;
+        clear:left;
+      }
+
+    </style>
+    
   </head>
   <body>
+    
     <header>
-        <div id="cover" class="cover_letter black">
-          PHIL'S SANDBOX
-        </div>
-    
-        <section id="home">
-    
-            <ul>
-              <li class="right">
-                <a href="#about" title="About Me" class="black inv_red">About</a>
-              </li>
-              <li class="right">
-                <a href="#blog" title="Blog" class="black inv_yellow">Blog</a>
-              </li>
-              <li class="right">
-                <a href="#photos" title="Photography" class="black inv_blue">Photos</a>
-              </li>
-              <li class="right">
-                <a href="#whiskey" title="Whiskey Reviews" class="black inv_yellow">Whiskey Reviews</a>
-              </li>
-            </ul>
-            
-        </section>
+
+      <h1>
+        Phil Berger
+        <span class="black">
+          Sucks
+        </span>
+      </h1>
+      
+      <nav>
+        <menu>
+          <li>
+            <a href="#about" class="red">...At Intros</a>
+          </li>
+          <li>
+            <a href="#resume" class="blue">...At Work</a>
+          </li>
+          <li>
+            <a href="#hobbies" class="yellow">...At Hobbies</a>
+          </li>
+        </menu>
+      </nav>
 
     </header>
     
+    
     <main>
+
+      <section id="about">
+        
+        <h2>About Me</h2>
       
-      <section id="about" class="white">
+        <p>
+          Hi. I'm Phil. I kinda suck. And this is my website. It kinda sucks too. The end.
+        </p>
+        
+        <p>
+          Ok, maybe I should go into a little more detail than that. I'm just not a fan of talking about myself.
+          But we live in a society where narcissim is the only currency, and so I must.
+        </p>
 
-        <article>
+        <p>
+          I'm originally from the St. Louis, MO (or thereabouts), but I currently live in Rochester, NY. I've been
+          a web/app developer/engineer/whatever (I'm not big on titles) since around 2005. I plan to get into that
+          to some extent on this site. However, it's not going to be a portfolio site per se. I also want to share
+          some of my interests outside of work.
+        </p>
+        
+      </section>
+
+      <section id="work_history">
+
+        <h2>Resume</h2>
+
+        <div class="grid_bin">
+
+          <aside id="skillset">
+            
+            <h3>Skillset</h3>
+  
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>ColdFusion</li>
+              <li>SQL</li>
+              <li>Tomcat</li>
+              <li>SEO</li>
+              <li>Social Media</li>
+              <li>Marketing</li>
+              <li>Consulting</li>
+              <li>Design</li>
+              <li>Technical Writing</li>
+              <li>ISO Compliance</li>
+            </ul>
+  
+          </aside>
+
+          <section id="resume">
           
-          <h1>About Me</h1>
+            <div id="manifesto">
 
-          <details>
+            <h3>Mission Statement/Manifesto</h3>
+
+            <p>
+              I've been making websites and apps professionally since 2005, and un-professionally since sometime
+              around 1995. Back then, it was a lot more fun and way more interesting. We were just making it all up
+              as we went along. Now it's all about standardization and efficiency. Everyone uses the same bloated
+              frameworks, which they don't really understand, to come up with generic solutions to problems that
+              don't exist, and I'm just fucking bored and over it.
+            </p>
+            
+            <p>
+              So I'm looking for something new. Maybe a boutique digital agency that's looking to do things the way
+              they used to be done. Maybe a small business that wants a bullshit-free internet prescense. Or maybe
+              (ideally?) something completely different. You might be surprised at what I'd be into. So if I sound
+              like someone you want to work with, or just bounce ideas off of, I would love it if you slid into my
+              DMs.
+            </p>
+            
+          </div>
+          
+              <div id="jobs">
+            
+                <h3>Positions Held</h3>
+            
+                <p>
+                  I know resumes are meant to start with your most recent job and work backwards. But that never made
+                  sense to me. Real life isn't like <i>Star Wars</i>. Stories should start at the beginning and progress
+                  forward so you can see how they evolve. But you do you, if you want to skip to the end, I won't stop
+                  you.
+                </p>
+            
+                <ul>
+              
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>Web Developer @ Bonneville St. Louis Radio Group (Jul. 2005 – Sep. 2007)</h4>
+                      </summary>
+                    
+                      <ul>
+                        <li>
+                          Responsible for all <strong>front and back-end website development</strong> for the websites associated with Bonneville International's media properties in the St. Louis market, including four FM radio stations, one AM radio station, and two websites.
+                        </li>
+                        <li>
+                          Responsible for ensuring sites utilized usability standards and effective <strong>SEO</strong> content management.
+                        </li>
+                        <li>
+                          Worked with senior managers to construct a revised New Media Business Plan for Bonneville St. Louis. This revised business plan resulted in a significant increase in site traffic, as well as a 100% increase in generated ad revenue during 2006 and a similar increase in 2007.
+                        </li>
+                        <li>
+                          Helped spur an initiative to make Bonneville’s St. Louis properties among the first radio stations in the country to utilize social media, such as Twitter.
+                        </li>
+                      </ul>
+                    </details>
+    
+                  </li>
+                  <li>
+                    
+                    <details>
       
-            <summary>
-              Find out more about me.
-            </summary>
-            
-            <h2>
-              Hi. I'm Phil.
-            </h2>
-            
-            <p>
-              I'm originally from the St. Louis area, but I currently live in Rochester, NY.
-              (There's also been stops in the UK and South Dakota along the way).
-            </p>
-
-            <p>
-              I've been a web/app/whatever developer for a long ass time.
-              I've also dabbled in technical writing and social media management here and there.
-              If you really want to, <a href="#" target="_blank">you can check out my resume</a>,
-              but this site isn't intended to be a work portfolio per se.
-            </p>
-
-            <p>
-              When I'm not working, I have a lot of other interests:
-              
-              <ul>
-                <li>I'm definitely a dog person.</li>
-                <li>I mess around with photography.</li>
-                <li>I'm really into art.</li>
-                <li>I love trying new beers, wines, and whiskeys.</li>
-                <li>I'm a beekeeper. At least I try to be a beekeeper.</li>
-                <li>I love cooking when I have the time to throw myself into it.</li>
-                <li>I enjoy all types of music and I'm trying to teach myself to play the keyboard/piano.</li>
-                <li>I enjoy learning new languages. I can speak French, Italian, German, and Gaelic.</li>
-                <li>
-                  I'm a huge sports fan.<br/>
-                  I still mess around but I don't play as many sports as I used to. I got old and can't take the poundings any more.
-                  But I'm a <a href="#" target="_blank">Rochester Americans</a>, a <a href="#" target="_blank">card-carrying supporter of CF Montreal</a>, and a huge baseball fan as well.
-                  I also have a pretty sweet memborbilia collection.
-                </li>
-              </ul>
-
-            </p>
-
-          </details>
-          
-        </article>
-        
-        <article>
-
-          <h1>About This Site</h1>
-
-          <details>
+                      <summary>
+                        <h4>Director Of Online Operations @ iChannel.FM (Oct. 2007 – Dec. 2008)</h4>
+                      </summary>
+    
+                      <ul>
+                        <li>
+                          Responsible for strategic decision making, resource management, marketing, and all project development for iChannel.FM, a one-stop vertically integrated startup in the music space, combining a record label, radio station network, digital music store, and social media site, under one umbrella.
+                        </li>
+                    
+                        <li>
+                          Responsible for all aspects of the iChannel.FM website, including:
+                    
+                          <ul>
+                            <li>
+                              <strong>Front and Back-end development</strong>.
+                            </li>
+                            <li>
+                              <strong>SEO</strong> management.
+                            </li>
+                            <li>
+                              <em>Writer and editor</em> of iChannel's Music News & Reviews Blog.
+                            </li>
+                            <li>
+                              Managed <strong>digital marketing campaigns</strong> on Facebook, Twitter, and MySpace. As a result of these efforts, traffic to the iChannel website more than doubled in one quarter, and grew nearly 5-fold in one year.
+                            </li>
+                            <li>
+                              Co-produced the iCoustix <strong>podcast</strong>.
+                            </li>
+                            <li>
+                              Worked closely with the Sales Manager to create marketing proposals for national advertisers such as Scion and McDonalds.
+                            </li>
+                            <li>
+                              <strong>Invited to be a panelist</strong> at the PLAY:STL music festival, speaking on how social media was changing the music industry.
+                            </li>
+                            
+                            <li>
+                              Involved with <strong>organizing and promoting music events</strong>, including La Revolucion de Rosas and the iFest music festival.
+                            </li>
+                    
+                            <li>
+                              <strong>Fun Fact About This Job:</strong> This job was wall-to-wall fun.
+                            </li>
+                    
+                            <li>
+                              <strong>Key Takeaway From This Job:</strong> This job really developed my ability to think outside the box.
+                    
+                              <ul>
+                                <li>
+                                  Need to give a presentation to an advertiser demonstrating professionalism in the afternoon, then later that night meet with a punk band in an underground club and convince them you're not corporate? No problem.
+                                </li>
+                                <li>
+                                  Turn a conference room into a fully functional tv studio in 2 hours? No problem.
+                                </li>
+                                <li>
+                                  Do a radio show from your car as you're driving down I-55 with a hangover because you and your team were out drinking with a band in Chicago until 3:00am, and you all overslept? No problem.
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+    
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>
+                          Web Developer II @ ChrisLands.com, a subsidiary of AbeBooks and Amazon (Apr. 2009 – Sep. 2011)
+                        </h4>
+                      </summary>
+                      
+                      <ul>
+          <li>
+            Developed and maintained a CMS platform that hosted e-commerce websites and applications for over 1,000 clients, primarily independent booksellers, located throughout North America, Europe, and Australia.
+          </li>
+    
+          <li>
+            <strong>Fun Fact About This Job:</strong> I got to take regular business trips to Seattle and Victoria BC.
+          </li>
+    
+          <li>
+            <strong>Key Takeaway From This Job:</strong> Sometimes a job comes along that isn't going to help you grow, but the money is too good to pass up. There's no shame in taking it. There's also no shame in quitting.
+          </li>
+    
+        </ul>
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>Application Developer @ Osborn-Barr (Feb. 2012 - Jun. 2012, Feb. 2013 - Oct. 2013)</h4>
+                      </summary>
+    
+                      <ul>
+                    
+                        <li>
+                          Worked as a contractor for multiple stints at Osborn-Barr, a leading advertising/public relations agency in St. Louis, MO with several Fortune 500 clients.
+                        </li>
+                    
+                        <li>
+                          Co-developed a <strong>Content Management System (CMS)</strong>, along with accompanying documentation, to manage campaign worfklow, as well as create and manage emails to a database of over 10,000 participants.
+                        </li>
+                    
+                        <li>
+                          Performed ad hoc <strong>data analysis</strong> and generated reports, relating to both the progress and effectiveness of PR campaigns.
+                        </li>
+                    
+                        <li>
+                          Developed a <strong>web services API</strong> to be used on Osborn-Barr development projects that consolidates and streamlines a number of services and resources, such as <strong>user authentication, geolocation/Google Map implementation, and uploads to Amazon S3</strong>. Its purpose was to simplify the implementation of third party APIs across all Osborn Barr projects.
+                        </li>
+                    
+                        <li>
+                          Participated in regular code reviews, serving as a mentor to less experienced developers on <strong>projects involving PHP platforms such as WordPress and the Zend framework</strong>.
+                        </li>
+                    
+                        <li>
+                          <strong>Fun Fact About This Job:</strong> Advertising agencies are basically daycare centers for boozy, yet creative mercenaries and/or young professionals who enjoy being underpaid and overworked. Also, at no time is anyone really confident that they're going to have a job next month. Which is fitting, in a way. My 2 stints at Osborn-Barr were the bookends of a phase in my career where everything was always in flux as I bounced from contract to contract.
+                        </li>
+                    
+                        <li>
+                          <strong>Key Takeaway From This Job:</strong> Everyone needs a stint at a job like this. You'll make valuable professional connections and it will give you stories to tell when you're older.
+                        </li>
+                    
+                      </ul>
+    
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
       
-            <summary>
-              Why Is This Site A Thing?
-            </summary>
-
-            <h2>Why Does This Site Exist?</h2>
-            
-            <p>
-              I made my first website in the mid-90's. It was clunky and the content was random. I was teaching
-              myself HTML as I went along and I threw everything I was learning into the site without much thought.
-              I did the whole thing using Notepad. No wireframes. No frameworks. It was as terrible as it was
-              glorious.
-            </p>
-            
-            <p>
-              I started doing development professionally in 2005. I've lost count of how many websites I've made.
-              I've done sites for radio stations, bands, retailers, bars, casinos, banks, Fortune 500 corporations,
-              even the military. But I haven't made a site just for me since that first shitty website.
-            </p>
-            
-            <p>
-              Frankly, I'm burned out. So I'm trying to get back to my roots as they say, and make my own shitty
-              little handmade site with whatever I want on it.
-            </p>
-
-            <h2>Why Does This Site Look The Way It Does?</h2>
-
-            <p>
-              Honestly, I don't know what this site looks like yet. I'm not gonna worry about that until I get at
-              least some content in place. But I do have some idea in my head of how it's going to look. The
-              biggest design influences are going to be <a href="#" target="_blank">Brutalism</a> and
-              <a href="#" target="_blank">Neoplasticism</a>.
-            </p>
-
-            <blockquote>
-
-              <h3>Brutalism</h3>
+                      <summary>
+                        <h4>Application Developer @ Wells Fargo (Jul. 2012 - Oct. 2012)</h4>
+                      </summary>
+                    
+                      <ul>
+                        <li>
+                          Responsible for developing a web-based application that allowed users to create and edit <strong>XML-based</strong> rule sets, which are ultimately used by analytic engines to process mortgage data.
+                        </li>
+                        
+                        <li>
+                          <strong>Fun Fact About This Job:</strong> Nothing. Nothing about this was enjoyable. I bailed after I completed the first phase of the project. It was gross.
+                        </li>
+                    
+                        <li>
+                          <strong>Key Takeaway From This Job:</strong> This job made a Democratic Socialist out of me. The financial system needs to be dismantled.
+                        </li>
+                      </ul>
+                    
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>Web Developer @ 44 Interactive (Nov. 2012 - Jan. 2013)</h4>
+                      </summary>
+                    
+                      <ul>
+                    
+                        <li>
+                          Performed a variety of both <strong>front and back end development</strong> tasks for this small, but growing agency in South Dakota.
+                        </li>
+                    
+                        <li>
+                          Managed <strong>SEO</strong> campaigns for clients.
+                        </li>
+                    
+                        <li>
+                          <strong>Fun Fact About This Job:</strong> I can say I spent a few months in South Dakota.
+                        </li>
+                    
+                        <li>
+                          <strong>Key Takeaway From This Job:</strong> Trust your gut. If you get a bad vibe from senior management, don't ignore it.
+                        </li>
+                    
+                      </ul>
+                    
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>Software Engineer @ Leidos (Oct. 2013 - Present)</h4>
+                      </summary>
               
-              <p>
-                Brutalism has its roots in Mid-20th Century European archictecture. After World War II, most of
-                Europe was blown to shit. Many of the major cities needed to rebuild and they had 3 basic
-                requirements for construction. It had to be fast, cheap, and strong enough that it won't get blown
-                to shit again in the next war.
-              </p>
-              
-              <p>
-                So what did those architects come up with? Big, ugly buildings made of one solid block of concrete
-                with no ornamentation and as little glass as possible. However, over time people have come to see
-                something endearing in these buildings.
-              </p>
-              
-              <p>
-                The term was hijacked by the web design community to refer to an "old school" approach that
-                elminates things like script bloat and slow loading graphics, sacrificing the bells and slick
-                interface for a lean site that loads fast. I'm a big fan of this philsophy and it's something I'll
-                probably write a lot more about as the site evolves.
-              </p>
-            
-            </blockquote>
-            
-            <blockquote>
-              
-              <h3>Neoplasticism</h3>
-              
-              <p>
-                Also known as <i>De Stijl</i> (Dutch for "The Style"), Neoplasticism was an art movement that
-                emerged from Europe in the 1920's. <a href="#" target="_blank">Piet Mondrian</a> is one of the
-                better known artists from this movement. At its core, Neoplasticism, is a revolution against the
-                highly stylized art that preceded it. It embraces a harsher, abstract aesthetic that uses only
-                straight horizontal and vertical lines, and a simplified color palette that consists of black,
-                white, red, blue, and yellow.
-              </p>
+                      <ul>
+                        <li>
+                          I have been working remotely on a full-time basis since June, 2017.
+                        </li>
+                        <li>
+                          I work on a variety of <strong>geospatial</strong> projects for the National Geospatial Intelligence Agency (NGA), including multiple browser-based mapping applications and workflow tools to assist NGA in its mission.
+                          
+                          <ul>
+                            <li>
+                              Front-End Development
+                            </li>
+                            <li>
+                              Back-End Development
+                            </li>
+                            <li>
+                              Database Management
+                            </li>
+                            <li>
+                              Server Management
+                            </li>
+                          </ul>
+                    
+                        </li>
+                        <li>
+                          I have authored and curated a wide range of <strong>ISO-9001 compliant</strong> documentation and userguides, with intended audiences ranging from fellow developers to end users, as well as made contributions to a variety of white papers and project proposals.
+                        </li>
+                        <li>
+                          I have created <strong>reports and data visualizations</strong> to analyze the usage and productivity of applications and end users.
+                        </li>
+                        <li>
+                          I have conducted training seminars and presentations for new NGA personnel on how to effectively use software tools provided by Leidos.
+                        </li>
+                        <li>
+                          <strong>Fun Fact About This Job:</strong> Maps are wrong.
+                        </li>
+                        <li>
+                          <strong>Key Takeaway From This Job:</strong> This position has been rewarding and demanding in equal parts,
+                          working on mission-critical projects for the DoD where deadlines are tight and mistakes can't happen. If I can
+                          handle this job, I can handle anything.
+                        </li>
+                      </ul>
+                    
+                    </details>
+    
+                  </li>
+                  <li>
+    
+                    <details>
+    
+                      <summary>
+                        <h4>Technical Writer @ University of Rochester (Nov. 2019 - Mar. 2020)</h4>
+                      </summary>
+                    
+                      <li>
+                        I worked at U of R on a temporary, part time basis to author a comprehensive user manual for the workflow software used by molecular lab technicians to perform tests on biological samples and manage the results.
+                      </li>
+                      <li>
+                        <strong>Fun Fact About This Job:</strong> *crickets chirping*
+                      </li>
+                      <li>
+                        <strong>Key Takeaway From This Job:</strong> Academia is a whole other universe and it ain't for me.
+                      </li>
+                    
+                    </details>
+    
+                  </li>
+    
+                </ul>
 
-            </blockquote>
+              </div>
 
-            <p>
-              The common theme here is to keep things as simple as positive. One of my biggest complaints about
-              modern web design is that it's become to easy to make a website. There are libraries and frameworks
-              that let you do a lot of cool stuff. But not enough people know how to really use them. The result is
-              website after website that look the same and perform poorly. I'm hoping I can do better than that by
-              limiting myself.
-            </p>
+              <div id="education">
             
-            <p>
-              And for any professional web designers that happen across this who feel like I'm
-              judging you, that is 100% what I'm doing.
-            </p>
+                <h3>Education</h3>
             
-          </details>
-          
-        </article>
+            
+                <ul>
+                  <li>
+                    MS Computer Science @ Newcastle University (Dec. 2004)
+                  </li>
+                  <li>
+                    Master of Business Administration @ Southern Illinois Univeristy at Edwardsville (May 2002)
+                  </li>
+                  <li>
+                    Bachelor of Science in Business Administration @ Southern Illinois Univeristy at Edwardsville (May 1999)
+                  </li>
+                </ul>
+              
+              </div>
 
+              <div id="side_projects">
+            
+                <h3>Side Projects</h3>
+            
+                <p>
+                  I occasionally take on other projects just for fun. These are some of my favorites.
+                </p>
+            
+                <ul>
+                  <li>
+
+                    <details>
+  
+                      <summary>
+                        <h4>
+                          <a href="https://shamrockjacks.com" target="_blank">Shamrock Jack's</a>
+                        </h4>
+                      </summary>
+    
+                      Shamrock Jack's is a bar near my house. The owner is a good friend of mine and I've been
+                      helping him with his marketing stuff in exchange for free drinks. Major rebrand incoming
+                      around October 2023-ish.
+                    
+                    </details>
+                    
+                  </li>
+                  <li>
+    
+                    <details>
+                    
+                      <summary>
+                        <h4>
+                          <a href="" target="_blank">Ocean Rivals</a>
+                        </h4>
+                      </summary>
+                      
+                      Ocean Rivals was a band I befriended back in my music business days. In 2015, they recorded an
+                      album called <em>Curious People</em> and reached out to me to help them come up with something
+                      special for the release. They wanted to recreate that vintage album experience of reading
+                      liner notes and looking at artwork, in a web browser.
+                      <a href="or/index.html" target="_blank">This is what we came up with.</a>
+                      It's not the most sophisticated thing I've ever made. But it's definitely my favorite.
+
+                    </details>
+                    
+                  </li>
+
+                </ul>
+                
+
+
+              </div>
+    
+            </div>
+
+          </section>
+  
+        </div>
+  
       </section>
-      <section id="blog" class="white">
+      
+      <section id="hobbies">
 
-        <h1>Blog</h1>
+          <h2>Other Interests</h2>
         
-        <p>
-          I'm not sure that <i>blog</i> is quite the right word for what I'm envisioning here. At least not in the
-          traditional sense. I mean there's going to be some of that, but I want it to be a little more free form.
-          I've tried blogging in the past and it just never comes together. I tend to force myself to follow the
-          standard conventions and I quickly get bored and frustrated. So I'm not promising or expecting anything
-          and whatever happens will be whatever happens.
-        </p>
+          <ul>
+            <li>
+              <details>
+                <summary>
+                  <h3>Beekeeping</h3>
+                </summary>
+                
+                <img src="img/bee_banner.jpg" alt="Close up photo of bees" class="banner">
+                <div>
+                  
+                  <figure class="left">
+                    <img src="img/hive.jpg" alt="One of my hives"/>
+                    <figcaption>One of my hives</figcaption>
+                  </figure>
+
+                  <p>
+                    I started beekeeping in the Spring of 2020. Actually, that's not quite accurate. My girlfriend
+                    decided I was going to start beekeeping in the Spring of 2020. We had watched a documentary on
+                    declining bee populations and she decided to sign us up for some beekeeping classes and order a
+                    couple of hives.
+                  </p>
+                  <p>
+                    Fast forward to the day we got our bees...she got stung and decided beekeeping
+                    wasn't for her. Apparently, she was imagining a beekeeper's life to be like a real life Honey
+                    Nut Cheerios commercial, where bees greet her every morning by cheerfully pooping honey onto her
+                    breakfast.
+                    <br>
+                    <strong>Spoiler Alert:</strong> That's not how it works.
+                  </p>
+
+                  <figure class="right">
+                    <img src="img/bees.JPG" alt="Close up photo of bees"/>
+                    <figcaption>Some of my bees</figcaption>
+                  </figure>
+
+                <!-- figure class="right">
+                    <img src="img/hive_frame.jpg" alt="A peek inside the hive"/>
+                    <figcaption>A peek inside the hive</figcaption>
+                  </figure -->
+
+                  <!-- figure class="right">
+                    <img src="img/bee_sting.jpg" alt="Close up photo of bees"/>
+                    <figcaption>The bees were feeling particularly bitchy that day</figcaption>
+                  </figure -->
+
+                  <p>
+                    Beekeeping is not easy. In fact, it's often frustrating. And you do get stung. But it's totally
+                    worth it. Sure you can get honey from them once a hive is established (not a trivial feat btw),
+                    but bees are incredibly interesting in their own rite.
+                    <br>
+                    <br>
+                    Did you know that bees communicate with one another by dancing? Or that beehives operate pretty
+                    much exactly like airports?
+                    <br>
+                    <br>
+                    Or that any bee you come across is most likely going to be female?
+                    <br>
+                    <br>
+                    Or that bee swarms aren't <em>necessarilly</em> as dangerous as you might think?
+                    <br>
+                    <br>
+                    Or that bees are a vital part of the ecosystem and having them in your area has several benefits
+                    to your community?
+                    <br>
+                    <br>
+                    It's all true, and I'm going to try to write down some of the things I've seen and learned
+                    about bees. In the meantime, here are some useful resources I found when I was getting started:
+                  </p>
 
 
-      </section>
-      <section id="photos" class="black">
 
-        <h1>Photography</h1>
-         
-        <p>
-          I like to dabble in photography. I'm going to curate some photo galleries in this section, along with my thoughts on them. They're going to range from good to bad and all points in between.
-        </p>
+                  <ul>
+                    <li>
+                      <a href="https://abfnet.org" target="_blank">The American Beekeeping Federation</a>
+                    </li>
+                    <li>
+                      <a href="https://www.pollinator.org" target="_blank">Pollinator.org</a>
+                    </li>
+                    <li>
+                      <a href="https://cals.cornell.edu/pollinator-network" target="_blank">
+                        The Pollinator Network at Cornell University
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.reddit.com/r/Beekeeping/" target="_blank">
+                        r/Beekeeping on Reddit
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/@UoGHoneyBeeResearchCentre" target="_blank">
+                        The University of Guelph Honey Bee Research Centre YouTube page
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                
+                <summary>
+                  <h3>Whiskey Reviews</h3>
+                </summary>
+                
+                <figure class="left">
+                  <img src="img/jamo_black_barrel.jpg" alt="Jameson Black Barrel"/>
+                  <figcaption>Jameson Black Barrel</figcaption>
+                </figure>
 
-      </section>
-      <section id="whiskey" class="white">
-        
-        <h1>Life Is Too Short To Drink Shitty Whiskey</h1>
-        
-        <p>
-          I started drinking whiskey when I was in college and my love for it was instant and unconditional.
-          Back then, I didn't really know much about whiskey and I wasn't very discerning. I just knew it made my
-          brain all sparkly.
-        </p>
-        
-        <p>
-          These days, however, I'm a little more sophisticated in my whiskey consumption and my palette has become
-          more discerning. I don't drink quite as much of it, and I only drink the good stuff.
-        </p>
-        
-        <p>
-          Now, I want to save the world from that rigourous trial and error process of finding the good stuff by
-          jotting down my thoughts on all of the whiskeys I drink.
-        </p>
-        
-        <article id="martell_blue_swift" class="cognac french grade_a">
-          
-          <h2>Martell - Blue Swift Cognac</h2>
+                <p>
+                  I <em>really</em> like to drink. Sorry, not sorry. However, as I've gotten older, drinking has
+                  become more about the journey and less about the destination for me. What I mean to say is I'm
+                  less concerned with getting fucked up as I am about enjoying what I drink. To that end, a few
+                  years ago, I began keeping a journal of all the different whiskeys that I have tried. It's a long
+                  list, and it's going to take me awhile to post them all, but I'm going to start publishing my
+                  whiskey notes here.
+                </p>
+                
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Whiskey</th>
+                      <th>Origin</th>
+                      <th>Color</th>
+                      <th>Nose</th>
+                      <th>Body</th>
+                      <th>Taste</th>
+                      <th>Notes</th>
+                      <th>Score</th>
+                    </tr>
+                  </thead>
+                </table>
 
+                <figure class="left">
+                  <img src="img/rabbit_hole.jpg" alt="Rabbit Hole"/>
+                  <figcaption>Rabbit Hole</figcaption>
+                </figure>
 
-          <div class="whiskey_score">
-            <label for="mbs_score">Rating: 10/10</label>
-            <progress id="mbs_score" value="100" max="100"></progress>
-          </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <h3>Photography</h3>
+                </summary>
+                
+                <p>
+                  Photography is another hobby that I've taken more of an interest in as I get older.
+                  I had always been told that I take good vacation photos, and I finally decided to get more serious
+                  about it around 2018 or 2019. I've taken a few classes and learned the basics, like the
+                  <a href="https://en.wikipedia.org/wiki/Rule_of_thirds" target="_blank">Rule of Thirds</a>
+                  and the <a href="https://photographylife.com/what-is-exposure-triangle" target="_blank">Exposure Triangle</a>, and I've gotten a lot better. Here, I'm going to provide links to some themed
+                  Google Photo Albums of some of my favorite photos I've taken.
+                </p>
+                
+                <p>
+                  Most of my photos are taken with a Canon EOS or some version of a Pixel cellphone.
+                </p>
+                
+                <ul>
+                  <li></li>
+                </ul>
+                
+                
 
-          <details>
-            
-            <summary>
-              80 proof French Cognac
-            </summary>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <h3>Travel</h3>
+                </summary>
+                
+                <p>
+                  I love travelling. At this point, I've been to every state east of the Mississippi, and most of
+                  them to the west. I also lived in the UK for two years, and visited France and Italy, while I was
+                  there. I've also traveled extensively in Canada. These are some of my favorite cities.
+                </p>
+                
+                <ul>
+                  <li>
+                    <details>
 
-            <p>
-              Martell Blue Swift is a French Cognac that is aged in bourbon barrels for 4 years. A 750ml bottle will
-              cost you around $50, and it's well worth that price.
-            </p>
+                      <summary>
+                        <h4>Halifax, Nova Scotia</h4>
+                      </summary>
 
-            <ul>
-              <li>Rich, golden brown color</li>
-              <li>I would describe the nose as being warm, sweet, and oaky.</li>
-              <li>
-                The flavor is very complex. It's warm and velvety. It has a distinct fruity taste like sherry.
-                There are also mellow toffee notes present, and just the right amount of spicy bite to it.
-                </li>
-            </ul>
-          
-          </details>
-          
-        </article>
+                      coming soon
+                    </details>
+                  </li>
+                  <li>
+                    <details>
 
-        <article id="beggars_bush" class="irish whiskey grade_a">
-          
-          <h2>Jack Ryan - Beggar's Bush 12-Year Old</h2>
+                      <summary>
+                        <h4>Montr&eacute;al, Quebec</h4>
+                      </summary>
 
+                      coming soon
+                    </details>
+                  </li>
 
-          <div class="whiskey_score">
-            <label for="jrbb_score">Rating: 10/10</label>
-            <progress id="jrbb_score" value="100" max="100"></progress>
-          </div>
-
-          <details>
-            
-            <summary>
-              92 proof Irish Whiskey
-            </summary>
-
-            <p>
-              Beggar's Bush is a 12-year old single malt Irish whiskey that is aged in bourbon barrells.
-              It's a limited edition, so you might have a hard time finding it, and it won't be cheap if you do. But
-              in my opionion, it's worth it. This might be the best Irish whiskey I've ever had.
-            </p>
-
-            <ul>
-              <li>Medium pale gold color</li>
-              <li>Nose is very strong, zesty, and sweet.</li>
-              <li>
-                This is a very smooth whiskey with a complicated flavor profile. There's a lot to unpack here.
-                This whiskey comes at you in waves. It's warm and smooth. Initially, you will notice a sweetness
-                that has elements of vanilla, caramel, honey, and fruitiness. Eventually, a peppery spiciness
-                emerges. Finally, the flavor evolves into a woody earthiness.
-              </li>
-            </ul>
-          
-          </details>
-          
-        </article>
-
-        <article id="jj_corry" class="irish whiskey grade_b">
-          
-          <h2>J.J. Corry - 'The Hanson' Batch No. 2</h2>
-
-
-          <div class="whiskey_score">
-            <label for="jjc_score">Rating: 8/10</label>
-            <progress id="jjc_score" value="80" max="100"></progress>
-          </div>
-
-          <details>
-            
-            <summary>
-              92 proof Irish Whiskey
-            </summary>
-
-            <p>
-              'The Hanson' Batch No.2 is a very smooth blended Irish whiskey with a complex but approachable flavor.
-              This particular whiskey is a limited edition that may be hard to find. But as I understand it,
-              J.J. Corry does everything in small batches using traditional rustic Irish barrelling techniques.
-              So I would imagine anything they do will be good.
-            </p>
-
-            <ul>
-              <li>Pale gold color</li>
-              <li>Nose is extremely sweet.</li>
-              <li>
-                This is a very smooth whiskey with a smooth mouthfeel. The flavor is sweet, though
-                not as sweet as I expected, with vanilla, toffee, citrus, and ever so subtle honey notes. It's a
-                fairly dry Irish whiskey with a spicy, peppery finish. Overall, it's not the best Irish whiskey I've
-                had, but it's far from the worst.
-              </li>
-            </ul>
-          
-          </details>
-          
-        </article>
-
-        <article id="two_stacks" class="irish whiskey grade_d">
-          
-          <h2>Two Stacks - The First Cut</h2>
+                </ul>
 
 
-          <div class="whiskey_score">
-            <label for="tsfc_score">Rating: 6.5/10</label>
-            <progress id="tsfc_score" value="65" max="100"></progress>
-          </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                
+                <summary>
+                  <h3>Foreign Languages</h3>
+                </summary>
+                
+                <p>
+                  Hand in hand with travel, I am also very interested in learning other languages. <a href="https://www.duolingo.com/" target="_blank">Duolingo</a> is the most used app on my phone. I've used
+                  it to learn several languages with varying degrees of success.
+                </p>
+                
+                <ul>
+                  <li>
+                    <strong>French:</strong> Je parle assez bien Fran&ccedil;ais.
+                    <br><br>
+                    I actually took four years of French in high school. I wish I had kept up with it, but I'm
+                    doing my best to make up for lost time. I was actually pleasantly surprised with how much
+                    French I retained from my teenage years. But, now that I practice it more regularly, I find
+                    I'm increasingly comfortable speaking French every time I visit Quebec.
+                  </li>
+                  <li>
+                    <strong>Italian:</strong> Io parlo un po d'Italiano.
+                    <br><br>
+                    I started dabbling in Italian during the Covid lockdowns. My girlfriend and I spent a lot of
+                    time during the pandemic watching travel shows, cooking shows, and Italian
+                    soccer...er...I mean <em>calcio</em>. So Italian came up a lot and it seemed natural to start
+                    learning the language. My Italian isn't nearly as good as my French. But it's getting there.
+                  </li>
 
-          <details>
-            
-            <summary>
-              86 proof Irish Whiskey
-            </summary>
+                </ul>
 
-            <p>
-              The First Cut is a blended Irish whiskey. Personally, I wasn't a fan. A lot of Irish whiskeys are a
-              touch underdone to me. They aren't as smooth as bourbon or as rich as scotch. And that is how I feel
-              about this one. It's a shame really, as there as are hints of a complex flavor. There's just too much
-              grainy, alcohol burn drowning it out.
-            </p>
-          
-            <ul>
-              <li>Medium gold color</li>
-              <li>Nose is sweet with hints of smokiness.</li>
-              <li>
-                The First Cut doesn't quite make the cut for me. It has a grainy taste with a strong alcoholic burn
-                that often comes with Irish whiskey. Unfortunately, that burn is a little two strong and it
-                overwhelms some of the more dyanmic underlying sweet and fruity notes. However, it does finish well,
-                with an earthy, nutty, spicy flavor.
-              </li>
-            </ul>
-          
-          </details>
-          
-        </article>
+              </details>
+            </li>
+            <li>
+              <details>
+                
+                <summary>
+                  <h3>Foreign Languages</h3>
+                </summary>
+                
+                <p>Hand in hand with travel, I am also very interested in learning</p>
+
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <h3>Sports Fandom</h3>
+                </summary>
+                
+                <p>Coming soon</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <h3>Art &amp; Design</h3>
+                </summary>
+                
+                <p>Coming soon</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <h3>Music</h3>
+                </summary>
+                
+                <p>Coming soon</p>
+              </details>
+            </li>
+          </ul>
 
       </section>
 
     </main>
+
     <footer>
-      <ul>
-        <li>&#127968;</li>
-        <li>
-          &#128526;
-        </li>
-        <li>&#128248;</li>
-        <li>&#127831;</li>
-        <li>&#127864;</li>
-        <li>&#127866;</li>
-        <li>&#128029;</li>
-        <li>&#127922;</li>
-        <li>&#127925;</li>
-        <li>&#127954;</li>
-        <li>&#128200;</li>
-        <li>&#128663;</li>
-        <li>&#128062;</li>
-        <li>&#9917;</li>
-      </ul>
-    
+      socials
     </footer>
+
   </body>
+
 </html>
